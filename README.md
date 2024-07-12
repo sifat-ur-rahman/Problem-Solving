@@ -16,7 +16,8 @@ const getMaleNames = (arr) => {
   return arr.filter(person => person.gender === 'male').map(person => person.name);
 };
 
-console.log(getMaleNames(people)); // Output: ["Bob", "Charlie"]
+console.log(getMaleNames(people));
+// Output: ["Bob", "Charlie"]
 ```
 ## 2. Object Manipulation
 Create an array of objects representing books with properties like title, author, and year. Write a function that takes the array and returns a new array with only the book titles. Print the result.
@@ -33,6 +34,21 @@ const getBookTitles = (arr) => {
   return arr.map(book => book.title);
 };
 
-console.log(getBookTitles(books)); // Output: ["Book One", "Book Two", "Book Three"]
+console.log(getBookTitles(books));
+// Output: ["Book One", "Book Two", "Book Three"]
+```
+## 3. Function Composition
+Write three functions: one to square a number, one to double a number, and one to add 5 to a number. Compose these functions to create a new function that squares a number, doubles the result, and then adds 5.
+
+```javascript
+
+const square = (num) => num * num;
+const double = (num) => num * 2;
+const addFive = (num) => num + 5;
+
+const composedFunction = (num) => addFive(double(square(num)));
+
+console.log(composedFunction(2));
+// Output: 9
 ```
 

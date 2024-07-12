@@ -49,7 +49,7 @@ const addFive = (num) => num + 5;
 const composedFunction = (num) => addFive(double(square(num)));
 
 console.log(composedFunction(2));
-// Output: 9
+// Output: 13
 ```
 ## 4. Sorting Objects
 Create an array of objects representing cars with properties like make, model, and year. Write a function to sort the array of cars by the year of manufacture in ascending order. Print the sorted array.
@@ -93,6 +93,7 @@ const updatePersonAge = (arr, personName, newAge) => {
 };
 
 console.log(updatePersonAge(people, "Bob", 31));
+
 // Output: [
 //   { name: "Alice", age: 25 },
 //   { name: "Bob", age: 31 },

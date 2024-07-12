@@ -99,7 +99,7 @@ console.log(updatePersonAge(people, "Bob", 31));
 //   { name: "Charlie", age: 35 }
 // ]
 ```
-##6. Array Reduction
+## 6. Array Reduction
 Create an array of numbers. Write a function that uses the reduce method to calculate the sum of all even numbers in the array.
 
 ```javascript
@@ -114,7 +114,7 @@ const sumEvenNumbers = (arr) => {
 
 console.log(sumEvenNumbers(numbers)); // Output: 30
 ```
-##7. Leap Year Checker
+## 7. Leap Year Checker
 Write a function that determines whether a given year is a leap year.
 
 ```javascript
@@ -126,7 +126,7 @@ const isLeapYear = (year) => {
 console.log(isLeapYear(2020)); // Output: true
 console.log(isLeapYear(2021)); // Output: false
 ```
-##8. Unique Values
+## 8. Unique Values
 Create an array of numbers with some duplicate values. Write a function to filter out the duplicate values and return a new array with only unique numbers. Print the result.
 
 ```javascript
@@ -139,7 +139,7 @@ const getUniqueValues = (arr) => {
 
 console.log(getUniqueValues(numbers)); // Output: [1, 2, 3, 4, 5, 6]
 ```
-##9. Find Maximum Value
+## 9. Find Maximum Value
 Write a function that takes an array of numbers and returns the maximum value.
 
 ```javascript
@@ -152,7 +152,7 @@ const findMaxValue = (arr) => {
 
 console.log(findMaxValue(numbers)); // Output: 10
 ```
-##10. Advanced Sorting
+## 10. Advanced Sorting
 Create an array of objects representing students with 'name' and 'grades' properties. Write a function to sort the students by average grade in descending order.
 
 ```javascript
@@ -178,7 +178,7 @@ console.log(sortStudentsByAverageGrade(students));
 //   { name: "Bob", grades: [78, 82, 80] }
 // ]
 ```
-##11. Functional Programming - Reduce
+## 11. Functional Programming - Reduce
 Write a function that uses the reduce function to calculate the total value of an array of objects with a 'quantity' and 'price' property.
 
 ```javascript

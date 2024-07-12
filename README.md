@@ -17,7 +17,7 @@ const getMaleNames = (arr) => {
 };
 
 console.log(getMaleNames(people));
-// Output: ["Bob", "Charlie"]
+
 ```
 ## 2. Object Manipulation
 Create an array of objects representing books with properties like title, author, and year. Write a function that takes the array and returns a new array with only the book titles. Print the result.
@@ -35,7 +35,7 @@ const getBookTitles = (arr) => {
 };
 
 console.log(getBookTitles(books));
-// Output: ["Book One", "Book Two", "Book Three"]
+
 ```
 ## 3. Function Composition
 Write three functions: one to square a number, one to double a number, and one to add 5 to a number. Compose these functions to create a new function that squares a number, doubles the result, and then adds 5.
@@ -49,7 +49,7 @@ const addFive = (num) => num + 5;
 const composedFunction = (num) => addFive(double(square(num)));
 
 console.log(composedFunction(2));
-// Output: 13
+
 ```
 ## 4. Sorting Objects
 Create an array of objects representing cars with properties like make, model, and year. Write a function to sort the array of cars by the year of manufacture in ascending order. Print the sorted array.
@@ -67,11 +67,7 @@ const sortCarsByYear = (arr) => {
 };
 
 console.log(sortCarsByYear(cars));
-// Output: [
-//   { make: "Honda", model: "Accord", year: 2018 },
-//   { make: "Toyota", model: "Camry", year: 2019 },
-//   { make: "Tesla", model: "Model 3", year: 2020 }
-// ]
+
 ```
 ## 5. Find And Modify
 Write a function that searches an array of objects for a specific person by name. If found, modify their age property. Print the updated array.
@@ -94,11 +90,7 @@ const updatePersonAge = (arr, personName, newAge) => {
 
 console.log(updatePersonAge(people, "Bob", 31));
 
-// Output: [
-//   { name: "Alice", age: 25 },
-//   { name: "Bob", age: 31 },
-//   { name: "Charlie", age: 35 }
-// ]
+
 ```
 ## 6. Array Reduction
 Create an array of numbers. Write a function that uses the reduce method to calculate the sum of all even numbers in the array.
@@ -113,7 +105,7 @@ const sumEvenNumbers = (arr) => {
   }, 0);
 };
 
-console.log(sumEvenNumbers(numbers)); // Output: 30
+console.log(sumEvenNumbers(numbers)); 
 ```
 ## 7. Leap Year Checker
 Write a function that determines whether a given year is a leap year.
@@ -124,8 +116,8 @@ const isLeapYear = (year) => {
   return (year % 4 === 0 && year % 100 !== 0) || (year % 400 === 0);
 };
 
-console.log(isLeapYear(2020)); // Output: true
-console.log(isLeapYear(2021)); // Output: false
+console.log(isLeapYear(2020)); 
+console.log(isLeapYear(2021)); 
 ```
 ## 8. Unique Values
 Create an array of numbers with some duplicate values. Write a function to filter out the duplicate values and return a new array with only unique numbers. Print the result.
@@ -138,7 +130,7 @@ const getUniqueValues = (arr) => {
   return [...new Set(arr)];
 };
 
-console.log(getUniqueValues(numbers)); // Output: [1, 2, 3, 4, 5, 6]
+console.log(getUniqueValues(numbers)); 
 ```
 ## 9. Find Maximum Value
 Write a function that takes an array of numbers and returns the maximum value.
@@ -151,7 +143,7 @@ const findMaxValue = (arr) => {
   return Math.max(...arr);
 };
 
-console.log(findMaxValue(numbers)); // Output: 10
+console.log(findMaxValue(numbers)); 
 ```
 ## 10. Advanced Sorting
 Create an array of objects representing students with 'name' and 'grades' properties. Write a function to sort the students by average grade in descending order.
@@ -173,11 +165,7 @@ const sortStudentsByAverageGrade = (arr) => {
 };
 
 console.log(sortStudentsByAverageGrade(students));
-// Output: [
-//   { name: "Charlie", grades: [95, 92, 93] },
-//   { name: "Alice", grades: [90, 85, 88] },
-//   { name: "Bob", grades: [78, 82, 80] }
-// ]
+
 ```
 ## 11. Functional Programming - Reduce
 Write a function that uses the reduce function to calculate the total value of an array of objects with a 'quantity' and 'price' property.
@@ -194,5 +182,5 @@ const calculateTotalValue = (arr) => {
   return arr.reduce((total, item) => total + item.quantity * item.price, 0);
 };
 
-console.log(calculateTotalValue(items)); // Output: 85
+console.log(calculateTotalValue(items)); 
 ```

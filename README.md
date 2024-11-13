@@ -184,3 +184,90 @@ const calculateTotalValue = (arr) => {
 
 console.log(calculateTotalValue(items)); 
 ```
+## 12. Reverse a string.
+
+```javascript
+function reverseString(str) {
+    return str.split('').reverse().join('');
+  }
+  
+console.log(reverseString('hello')); // Output: 'olleh'
+```
+
+## 13. Remove falsy values from array 
+
+```javascript
+let array = ['a',false,'b',NaN, 0, undefined, 'c',null,'','d']
+//passing Boolean to array.filter() will remove falsy value from array
+let newArray=array.filter(Boolean)
+// console.log(newArray)
+```
+## 14. Convert any value to boolean(true or false)
+
+```javascript
+let value = 'hero'
+// console.log(!!value)
+```
+
+## 15.Resizing any array 
+
+```javascript
+let letter = ['a','b','c','d','e']
+letter.length = 3
+// console.log(letter)
+```
+## 16. How to flatter a multi-dimensional array
+
+```javascript
+let num = [1, 2, [3, 4], 5, 6, [[7], 8]]
+let newNum = num.flat(Infinity)
+```
+## 17. Short conditionals
+
+```javascript
+const captain = "Sakib";
+
+//-------&&-------
+//Instead of doing this
+ if(captain === "Sakib"){
+    console.log('ok')
+ }
+ //we can use &&
+ captain === "Sakib" && console.log('ok')
+
+ //-----||-------
+ //Instead of doing this
+ if(captain !== "Sakib"){
+    console.log('Not ok')
+ }
+ //we can use &&
+ captain !== "Sakib" && console.log('Not ok')
+```
+
+
+## 18. Replace all occurances of a string
+
+```javascript
+const quote = "React is a JS framework & this framework is the most popular front-end framework right now"
+
+//Replace all occurances of 'framework' with 'library'.
+const newQuote = quote.replace(/framework/g,"library")
+// console.log(newQuote)
+```
+
+
+## 19. Know performance of a task 
+
+```javascript
+const startTime = performance.now()
+
+for (let i = 0; i <= 50; i++) {
+    // console.log(i)
+    
+}
+
+const endTime = performance.now()
+
+const time = `loop took ${endTime-startTime} milliseconds to finish`
+// console.log(time)
+```
